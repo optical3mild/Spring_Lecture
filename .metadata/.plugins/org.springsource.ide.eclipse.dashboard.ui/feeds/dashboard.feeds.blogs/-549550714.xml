@@ -5,7 +5,62 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-05-31T01:20:00Z</updated>
+  <updated>2019-05-31T19:46:00Z</updated>
+  <entry>
+    <title>Java CFEnv 1.1.0.M1 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/05/31/java-cfenv-1-1-0-m1-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Mark Pollack</name>
+    </author>
+    <id>tag:spring.io,2019-05-31:3700</id>
+    <updated>2019-05-31T19:46:00Z</updated>
+    <content type="html">&lt;div class="sect1"&gt;
+&lt;h2 id="introduction"&gt;&lt;a class="anchor" href="#introduction"&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf of the community I am happy to announce the release of Java CFEnv 1.1 M1.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This release brings in contributions from several teams&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;EMC Volume Service&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pivotal Single Sign-On Service&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pivotal Redis Service&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Support for Volume Services is a new feature.  Single Sign-On functionality has been improved to set Spring Security auto-configuration properties for Spring Security 5&amp;#8217;s OAuth support.  The Redis support has been improved to support auto-configuration of TLS.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The project &lt;a href="https://github.com/pivotal-cf/java-cfenv/blob/master/README.adoc"&gt;README&lt;/a&gt; has more information.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;A release candidate is going out next week, followed quickly by a GA release.  Please try it out and give feedback on our &lt;a href="https://github.com/pivotal-cf/java-cfenv/issues"&gt;github issues&lt;/a&gt; page.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="background"&gt;&lt;a class="anchor" href="#background"&gt;&lt;/a&gt;Background&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;For those who may have missed the &lt;a href="https://spring.io/blog/2019/02/15/introducing-java-cfenv-a-new-library-for-accessing-cloud-foundry-services"&gt;first release announcement&lt;/a&gt;, the Java CFEnv library allows you to easily access environment variables set when deploying an application to Cloud Foundry. It is modeled after the design of the library &lt;a href="https://github.com/cloudfoundry-community/node-cfenv/"&gt;node-cfenv&lt;/a&gt; and other &lt;code&gt;*-cfenv&lt;/code&gt; libraries in the Cloud Foundry ecosystem.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The library also sets common application properties in Spring Boot so that Java objects such as the &lt;code&gt;DataSource&lt;/code&gt; or the &lt;code&gt;RabbitConnectionFactory&lt;/code&gt; are created using Spring Boot auto-configuration.  It is a replacement for the Spring Cloud Connectors library which is now is maintenance mode.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>A Bootiful Podcast: Ver?nica Lopez on Go, Kubernetes, Physics, the Cloud, and More</title>
     <link rel="alternate" href="https://spring.io/blog/2019/05/31/a-bootiful-podcast-ver-nica-lopez-on-go-kubernetes-physics-the-cloud-and-more" />
@@ -998,22 +1053,6 @@ Mono&amp;lt;Void&amp;gt; atomic = template.update(Step.class)&#xD;
   &lt;li&gt;Issue Tracker: &lt;a href="https://github.com/spring-projects/spring-data-r2dbc/issues"&gt;github.com/spring-projects/spring-data-r2dbc/issues&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-r2dbc/1.0.0.M2/"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/r2dbc/docs/1.0.0.M2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/r2dbc/docs/1.0.0.M2/reference/html/"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/r2dbc/docs/1.0.0.M2/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 2.1.5 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/05/15/spring-boot-2-1-5-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Phil Webb</name>
-    </author>
-    <id>tag:spring.io,2019-05-15:3681</id>
-    <updated>2019-05-15T12:00:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Boot 2.1.5 has been released and is now available from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and Maven Central.&lt;/p&gt;
-&lt;p&gt;This is a maintenance release that includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.1.5.RELEASE"&gt;a number of important dependency updates and bug fixes&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;A gentle reminder that Spring Boot 1.5 will be &lt;a href="https://spring.io/blog/2018/07/30/spring-boot-1-x-eol-aug-1st-2019"&gt;end of life in august&lt;/a&gt;, so all users should now be upgrading to Spring Boot 2.1.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.1.5.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

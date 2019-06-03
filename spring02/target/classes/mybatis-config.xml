@@ -5,6 +5,8 @@
 <configuration>
 
 	<typeAliases>
+		<typeAlias alias="memberDto" type="com.example.spring02.model.dto.MemberDTO" />
+		
 	</typeAliases>
 
 </configuration>

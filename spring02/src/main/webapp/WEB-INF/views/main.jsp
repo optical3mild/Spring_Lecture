@@ -9,7 +9,6 @@
 </head>
 <body>
 	<%@ include file="include/menu.jsp" %>
-	<hr>
 	<h2>${message}</h2>	
 </body>
 </html>

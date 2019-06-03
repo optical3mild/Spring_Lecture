@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 다른 mapper와 중복되지 않도록 네임스페이스 기재 -->
+<mapper namespace="member">
+	<!--  
+	<select id="memberList" resultType="com.example.spring01.model.dto.MemberDTO">-->
+	<!-- mybatis-config.xml에 alias처리, 위의 resultType과 동일하게 사용가능. -->
+	<select id="memberList" resultType="memberDto">
+	
+		select * from member order by name <!-- ;붙이지 말것. -->
+		
+	</select>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

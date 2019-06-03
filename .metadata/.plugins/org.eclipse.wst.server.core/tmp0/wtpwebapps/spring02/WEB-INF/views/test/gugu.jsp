@@ -9,7 +9,6 @@
 </head>
 <body>
 	<%@ include file="../include/menu.jsp" %>
-	<hr>
 	<h2>구구단 계산결과</h2>	
 	${result }
 </body>
