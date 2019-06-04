@@ -16,32 +16,28 @@ public class AddrBookServiceImpl implements AddrBookService {
 	AddrBookDAO addrBookDao;
 	@Override
 	public List<AddrBookDTO> dataList() {
-		// TODO Auto-generated method stub
 		return addrBookDao.dataList();
 	}
 
 	@Override
 	public void insertData(AddrBookDTO vo) {
-		// TODO Auto-generated method stub
+		addrBookDao.insertData(vo);
 
 	}
 
 	@Override
 	public AddrBookDTO viewData(String name) {
-		// TODO Auto-generated method stub
 		return addrBookDao.viewData(name);
 	}
 
 	@Override
 	public void deleteData(String name) {
-		// TODO Auto-generated method stub
-
+		addrBookDao.deleteData(name);
 	}
 
 	@Override
 	public void updateData(AddrBookDTO vo) {
-		// TODO Auto-generated method stub
-
+		addrBookDao.updateData(vo);
 	}
 
 }

@@ -12,7 +12,7 @@
 <body>
 	<div style="text-align:center">
 		<a href="${path }/">전체목록</a>&nbsp;&nbsp;
-		<a href="${path }/write.do">추가하기</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="${path }/addr/write.do">추가하기</a>&nbsp;&nbsp;&nbsp;&nbsp;
 		<div style="display:inline-block">
 			<form name="form1" method="post" action="${path }/addrbook/searchByName.do">
 				<input type="text" name="searchByName">

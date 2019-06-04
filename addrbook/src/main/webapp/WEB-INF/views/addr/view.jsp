@@ -9,26 +9,24 @@
 	<%@ include file="../include/header.jsp" %>
 	<script>
 		$(function(){
-			$("#btnUpdate").click(function(){
+			$("#bUpdate").click(function(){
 				document.form1.action="${path}/addr/update.do";
 				document.form1.submit();
 			});
 			
-			$("#btnDelete").click(function(){
-				alert("ssss");
+			$("#bDelete").click(function(){
 				if(confirm("삭제하시겠습니까?")) {
 					document.form1.action="${path}/addr/delete.do";
 					document.form1.submit();
 				}
 			});
 		})
-	
 	</script>
 </head>
 <body>
 	<%@ include file="../include/menu.jsp" %>
 	<div align="center">
-		<h1>회원정보</h1>
+		<h2>${dto.name}</h2>
 		<form name="form1" method="post">
 			<table border="1" width="400px">
 				<tr>
@@ -53,8 +51,8 @@
 				</tr>
 				<tr>
 					<td colspan="2" align="center">
-						<input type="button" value="수정" id="btnUpdate">
-						<input type="button" value="삭제" id="btnDelete">
+						<input type="button" value="수정" id="bUpdate">
+						<input type="button" value="삭제" id="bDelete">
 						<div style="color:red;">${message}</div>
 					</td>
 				</tr>

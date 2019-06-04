@@ -9,7 +9,7 @@
 	<%@ include file="include/header.jsp" %>
 </head>
 <body>
-	<div style="text-align:center">
+	<div align="center">
 		<%@ include file="include/menu.jsp" %>
 		<h2>주소록</h2>
 		<table border="1" width="700px">

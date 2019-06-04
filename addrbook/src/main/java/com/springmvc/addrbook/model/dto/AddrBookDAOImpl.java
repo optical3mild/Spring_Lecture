@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import org.apache.ibatis.jdbc.SQL;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
 
@@ -14,32 +15,27 @@ public class AddrBookDAOImpl implements AddrBookDAO {
 	SqlSession sqlSession;
 	@Override
 	public List<AddrBookDTO> dataList() {
-		// TODO Auto-generated method stub
 		return sqlSession.selectList("addrBook.dataList");
 	}
 
 	@Override
 	public void insertData(AddrBookDTO vo) {
-		// TODO Auto-generated method stub
-
+		sqlSession.insert("addrBook.insertData",vo);
 	}
 
 	@Override
 	public AddrBookDTO viewData(String name) {
-		// TODO Auto-generated method stub
 		return sqlSession.selectOne("addrBook.viewData",name);
 	}
 	
 	@Override
 	public void deleteData(String name) {
-		// TODO Auto-generated method stub
-
+		sqlSession.delete("addrBook.deleteData",name);
 	}
 
 	@Override
 	public void updateData(AddrBookDTO vo) {
-		// TODO Auto-generated method stub
-
+		sqlSession.update("addrBook.updateData",vo);
 	}
 
 }
