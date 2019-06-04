@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 다른 mapper와 중복되지 않도록 네임스페이스 기재 -->
+<mapper namespace="addrBook">
+	<select id="dataList" resultType="addrBookDto">
+		select * from address_book order by name <!-- ;붙이지 말것. -->
+	</select>
+	
+	<insert id="insertData">
+		insert into address_book (name,tel,party,email,address) values(#{name},#{tel},#{party},#{email},#{address})
+	</insert>
+	
+	<select id="viewData" resultType="addrBookDto">
+		select * from address_book where name = #{name}
+	</select>
+	
+	<update id="updateData">
+		update address_book set name=#{name}, tel=#{tel}, party=#{party}, email=#{email}, address=#{address} where name =#{name}
+	</update>
+	
+	<delete id="deleteData">
+		delete from address_book where name=#{name}
+	</delete>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 다른 mapper와 중복되지 않도록 네임스페이스 기재 -->
+<mapper namespace="addrBook">
+	<!--  
+	<select id="memberList" resultType="com.example.spring01.model.dto.MemberDTO">-->
+	<!-- mybatis-config.xml에 alias처리, 위의 resultType과 동일하게 사용가능. -->
+	<select id="dataList" resultType="addressBookDto">
+		select * from address_book order by name <!-- ;붙이지 말것. -->
+	</select>
+	
+	<insert id="insertData">
+		insert into address_book (name,tel,party,email,address) values(#{name},#{tel},#{party},#{email},#{address})
+	</insert>
+	
+	<select id="viewMember" resultType="memberDto">
+		select * from member where userid = #{userid}
+	</select>
+	
+	<!-- 비밀번호 체크 -->
+	<select id="checkPw" resultType="int">
+		select count(*) from member where userid=#{userid} and passwd=#{passwd}
+	</select>
+	
+	<update id="updateMember">
+		update member set passwd=#{passwd}, name=#{name}, email=#{email} where userid=#{userid}
+	</update>
+	
+	<delete id="deleteMember">
+		delete from member where userid=#{userid}
+	</delete>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

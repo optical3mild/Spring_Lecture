@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
+<%@ taglib prefix="tmt" uri="http://java.sun.com/jsp/jstl/fmt" %>    
 
 <!DOCTYPE html>
 <html>
@@ -12,7 +12,7 @@
 <body>
 	<%@ include file="../include/menu.jsp" %>
 	<h2>회원목록</h2>
-	<input type="button" value="회원등록" onclick="Location.href='${path}/member/write.do'">
+	<input type="button" value="회원등록" onclick="location.href='${path}/member/write.do'">
 	
 	<table border="1" width="700px">
 		<tr>
@@ -30,7 +30,9 @@
 					</a>
 				</td>
 				<td>${row.email }</td>
-				<td>${row.join_date }</td>
+				<td>
+					<fmt:formatDate value="${row.join_date }" pattern="yyyy-MM-dd HH:mm:ss"/>
+				</td>
 			</tr>
 		</c:forEach>
 	</table>

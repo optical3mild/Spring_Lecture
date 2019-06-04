@@ -12,6 +12,6 @@ public interface MemberService {
 	public MemberDTO viewMember(String userid);
 	public void deleteMember(String userid);
 	public void updateMember(MemberDTO vo);
-	public boolean checkpw(String userid, String passwd);
+	public boolean checkPw(String userid, String passwd);
 
 }
