@@ -16,6 +16,9 @@
 		up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/resources/**" location="/resources/" />
 	
+	<!-- ***** image file path설정 : 설정없이는 브라우저에 표시되지 않음 or 설정되어 있는 폴더인 resources에 넣어두어야 함-->
+	<resources mapping="/images/**" location="/WEB-INF/views/images/" />
+	
 	<resources location="/WEB-INF/views/include/" mapping="/include/**" />
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources 

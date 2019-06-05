@@ -5,9 +5,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+	<title>Insert title here</title>
+	<%@ include file = "../include/header.jsp" %>
 </head>
 <body>
 	<a href="${path}/upload/uploadForm">업로드 테스트</a>
+	<a href="${path}/shop/product/list.do">상품목록</a> <!-- 컨트롤러에서 처리 -->
 </body>
 </html>

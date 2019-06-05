@@ -5,6 +5,8 @@
 <configuration>
 
 	<typeAliases>
+		<typeAlias alias="productDto" type="com.product.spring.model.shop.dto.ProductDTO" />
+	
 	</typeAliases>
 
 </configuration>

@@ -26,6 +26,7 @@ public class UploadController {
 	@RequestMapping(value="/upload/uploadForm", method=RequestMethod.GET)
 	public void uploadForm() {
 		// /upload/uploadForm.jsp 포워딩
+		
 	}
 	
 	/* 업로드 버튼 클릭 --> 임시 디렉토리에 업로드 -> 파일정보가 file에 저장 ->지정된 디렉토리에 저장 */
