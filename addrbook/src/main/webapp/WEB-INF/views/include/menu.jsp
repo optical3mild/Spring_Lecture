@@ -14,8 +14,8 @@
 		<a href="${path }/">전체목록</a>&nbsp;&nbsp;
 		<a href="${path }/addr/write.do">추가하기</a>&nbsp;&nbsp;&nbsp;&nbsp;
 		<div style="display:inline-block">
-			<form name="form1" method="post" action="${path }/addrbook/searchByName.do">
-				<input type="text" name="searchByName">
+			<form name="form1" method="post" action="${path }/addr/searchByName.do">
+				<input type="text" name="name">
 				<input type="submit" value="찾기">
 			</form>
 		</div>

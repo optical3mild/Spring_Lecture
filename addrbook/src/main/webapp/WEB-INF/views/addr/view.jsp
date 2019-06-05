@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="tmt" uri="http://java.sun.com/jsp/jstl/fmt" %>    
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,24 +9,27 @@
 	<script>
 		$(function(){
 			$("#bUpdate").click(function(){
-				document.form1.action="${path}/addr/update.do";
-				document.form1.submit();
+				document.formView.action="${path}/addr/update.do";
+				document.formView.submit();
 			});
 			
 			$("#bDelete").click(function(){
 				if(confirm("삭제하시겠습니까?")) {
-					document.form1.action="${path}/addr/delete.do";
-					document.form1.submit();
+					document.formView.action="${path}/addr/delete.do";
+					document.formView.submit();	
+					//"error: submit() is not a function"의 경우 
+					// --> form의 id 변경하여 시도. or document로 접근하는 방법 외 다른방법으로 접근할 것.
 				}
 			});
 		})
 	</script>
 </head>
+</head>
 <body>
 	<%@ include file="../include/menu.jsp" %>
 	<div align="center">
 		<h2>${dto.name}</h2>
-		<form name="form1" method="post">
+		<form name="formView" method="post">
 			<table border="1" width="400px">
 				<tr>
 					<td>이름</td>
@@ -53,7 +55,6 @@
 					<td colspan="2" align="center">
 						<input type="button" value="수정" id="bUpdate">
 						<input type="button" value="삭제" id="bDelete">
-						<div style="color:red;">${message}</div>
 					</td>
 				</tr>
 			</table>

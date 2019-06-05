@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="D:\workshop\EGov\Spring_Lecture\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\workshop\EGov\Spring_Lecture\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\addressbook" path="/addressbook" reloadable="true" source="org.eclipse.jst.jee.server:addressbook"/><Context docBase="D:\workshop\EGov\Spring_Lecture\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\addrbook" path="/addrbook" reloadable="true" source="org.eclipse.jst.jee.server:addrbook"/></Host>
+      <Context docBase="D:\Workspace\EGov\springwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\Workspace\EGov\springwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\addrbook" path="/addrbook" reloadable="true" source="org.eclipse.jst.jee.server:addrbook"/><Context docBase="D:\Workspace\EGov\springwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\spring02" path="/spring02" reloadable="true" source="org.eclipse.jst.jee.server:spring02"/><Context docBase="D:\Workspace\EGov\springwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\product" path="/spring" reloadable="true" source="org.eclipse.jst.jee.server:product"/></Host>
     </Engine>
   </Service>
 </Server>

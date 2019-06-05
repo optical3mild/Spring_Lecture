@@ -20,7 +20,7 @@ import com.springmvc.addrbook.service.AddrBookService;
 public class MainController {
 	private static final Logger logger = LoggerFactory.getLogger(MainController.class);
 
-	@Inject //의존성 주입.
+	@Inject
 	AddrBookService addrBookService;
 	@RequestMapping("/")
 	public String main(Model model) {
@@ -41,7 +41,7 @@ public class MainController {
 		return "addr/write";
 	}
 	
-	@RequestMapping("addr/insert.do") //사용자가 요청한 주소
+	@RequestMapping("addr/insert.do")
 	public String insert(@ModelAttribute AddrBookDTO dto) {
 		addrBookService.insertData(dto);
 		return "redirect:/";
@@ -49,9 +49,8 @@ public class MainController {
 	
 	@RequestMapping("addr/update.do")
 	public String update(@ModelAttribute AddrBookDTO dto, Model model) {
-		
 		if(dto.getName()!=null && dto.getTel()!=null) {
-			addrBookService.updateData(dto); //레코드 수정
+			addrBookService.updateData(dto);
 			return "redirect:/";
 		} else {
 			model.addAttribute("dto", dto);
@@ -62,8 +61,19 @@ public class MainController {
 	
 	@RequestMapping("addr/delete.do")
 	public String delete(@ModelAttribute AddrBookDTO dto, Model model) {
-		addrBookService.deleteData(dto.getName()); //레코드 삭제
+		addrBookService.deleteData(dto.getName());
 		return "redirect:/";
 	}
 	
+	@RequestMapping("addr/searchByName.do")
+	public String search(@RequestParam String name, Model model){
+		model.addAttribute("dto", addrBookService.viewData(name));
+		return "addr/view";
+	}
+	
+//	@RequestMapping("addr/view.do")
+//	public String view(@RequestParam String name, Model model) {
+//		model.addAttribute("dto", addrBookService.viewData(name));
+//		return "addr/view";
+//	}
 }
