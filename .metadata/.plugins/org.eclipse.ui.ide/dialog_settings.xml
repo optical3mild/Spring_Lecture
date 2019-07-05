@@ -67,6 +67,10 @@
 		<item value="org.springframework.ide.eclipse.xml.namespaces.feature:3.9.9.201905211834-CI-B2250"/>
 	</list>
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\Administrator\Desktop\sample\scheduler1"/>
+		<item value="D:\Workspace\EGov\GroupWare-master\GroupWare\workspace\GroupWare"/>
+		<item value="D:\Workspace\EGov\GroupWare-master"/>
+		<item value="D:\Workspace\EGov\springwork"/>
 		<item value="D:\workshop\EGov\Spring_Lecture"/>
 		<item value="D:\Workspace\EGov\springwork\spring02"/>
 	</list>
@@ -75,6 +79,9 @@
 		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\Workspace\EGov\groupware9-master"/>
+			<item value="D:\Workspace\EGov\GroupWare-master\GroupWare"/>
+			<item value="D:\Workspace\EGov\GroupWare-master"/>
 			<item value="D:\Workspace\EGov\springwork\sample"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
@@ -93,5 +100,12 @@
 		<item key="DIALOG_WIDTH" value="500"/>
 		<item key="DIALOG_HEIGHT" value="401"/>
 		<item key="TOGGLE_SELECTED" value="true"/>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="168"/>
+		<item key="DIALOG_Y_ORIGIN" value="44"/>
+		<item key="DIALOG_WIDTH" value="525"/>
+		<item key="DIALOG_HEIGHT" value="579"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
 </section>
